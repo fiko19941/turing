@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Lobster&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap')
+@import 'reset'
+$transparente: rgba(0, 0, 0, 0.2)
+$pad-space: 20px
+$gris-claro: rgb(250, 234, 255)
+$link: rgb(54, 9, 241)
+$success: rgb(34, 15, 242)
+body
+    margin: 0
+    height: 100vh
+    background: whyte
+    font-size: 20px
+a
+    color: $link
+    font-weight: bold
+    text-shadow: 1px 1px 1px black, 1px 1px 5px black
+video
+    position: fixed
+    top: 0%
+    left: 0%
+    min-width: 100%
+    max-height: 100%
+    object-fit: cover  
+    z-index: -1
+.capa
+    position: fixed
+    top: 0%
+    left: 0%
+    min-width: 100%
+    max-height: 100%
+    background: #1c1c1d
+    opacity: 0.5
+    mix-blend-mode: overlay
+    z-index: -1
+header
+    font-family: 'Fuzzy Bubbles', cursive
+    background-size: 1250px, cover
+    background-repeat: no-repeat
+    background-position: center
+    nav
+       display: grid
+       grid-template-columns: 120px 1fr
+       background: $transparente
+       padding: 5px $pad-space
+       border-bottom: 1px solid $gris-claro
+       figure img
+        width: 100%
+       ul
+          display: inline-flex
+          align-items: center
+          justify-content: flex-end
+          li
+            margin-right: $pad-space
+    section
+       display: grid
+       display: green
+       grid-template-columns: 1fr 300px
+       padding: 50px $pad-space
+       column-gap: 100px
+       background: $transparente
+       blockquote 
+           color: white
+           text-shadow: 1px 1px 1px black, 1px 1px 5px black
+           font-size: 1em
+           background: rgba(0, 0, 0, 0.1)
+           padding: $pad-space
+           text-align: justify
+       blockquote figure img
+           display: block
+           width: 80%
+           margin-left: auto
+           margin-right: auto
+           margin: 80px
+           border: 5px solid blue
+           
+       form
+           padding: $pad-space
+           padding-top: 100px
+           background: $transparente
+           input, button, a
+           
+            margin-bottom: $pad-space
+
+           input 
+               padding: 10px
+               width: calc(100% - 25px)
+           button
+               width: 100%
+               font-size: 1m
+               background: $success
+               padding: 15px
+               border: none
+               color: white
+               cursor: pointer
+           a
+             display: block
+             text-align: center
+main
+    padding: 100px 120px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    row-gap: 80px
+    column-gap: 60px
+    font-family: 'Lobster', cursive
+    section h1 
+        color: white
+        text-shadow: 1px 1px 1px black, 1px 1px 5px black
+        font-size: 2em
+        background: rgba(0, 0, 0, 0.1)
+        padding: $pad-space
+        text-align: justify
+    
+        
+    section h2 
+        color: white
+        text-shadow: 1px 1px 1px black, 1px 1px 5px black
+        font-size: 2em
+        background: rgba(0, 0, 0, 0.1)
+        padding: $pad-space
+        text-align: justify
+
+    section h3 
+        color: white
+        text-shadow: 1px 1px 1px black, 1px 1px 5px black
+        font-size: 2em
+        background: rgba(0, 0, 0, 0.1)
+        padding: $pad-space
+        text-align: justify
+
+    section h4 
+        color: white
+        text-shadow: 1px 1px 1px black, 1px 1px 5px black
+        font-size: 2em
+        background: rgba(0, 0, 0, 0.1)
+        padding: $pad-space
+        text-align: justify
+
+    section h5
+        color: white
+        text-shadow: 1px 1px 1px black, 1px 1px 5px black
+        font-size: 2em
+        background: rgba(0, 0, 0, 0.1)
+        padding: $pad-space
+        text-align: justify
+
+footer
+    color: white
+    background: rgba(0, 0, 0, 0.1)
+    padding: $pad-space
+    text-align: center
+
+@media screen and (max-width: 600px)
+    body
+        background: green
+    header
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        nav
+            grid-template-columns: 40px 1fr
+        section
+            grid-template-columns: 1fr
+            blockquote
+                figure
+                   display: none
+    main
+        grid-template-columns: 1fr
+        padding: 30px 5px
+        section
+            border-bottom: 1px solid $gris-claro
+
+@media screen and (min-width: 600px)
+    body
+        background: $transparente
